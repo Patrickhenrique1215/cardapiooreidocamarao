@@ -22,3 +22,7 @@ document.getElementById('sobremesas').onclick = function() {
     window.location.href = 'sobremesas.html';
 };
 
+document.getElementById('vinhos').onclick = function() {
+    window.location.href = 'vinhos.html';
+};
+

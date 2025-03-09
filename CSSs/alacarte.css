@@ -1,0 +1,252 @@
+*{
+    box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+}
+
+
+html, body {
+    height: 100%;
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+    font-family: "Roboto", sans-serif;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+body.no-scroll {
+    overflow: hidden; /* Impede rolagem quando a sidebar está ativa */
+}
+
+
+
+/*  ---------  A LA CARTE  ======== */
+.bodyalacarte{
+    display: grid;
+    grid-auto-columns: 50%;
+    grid-template-areas: 
+    "ceviches camaroesalacarte"
+    "festivais frutosdomar"
+    "moquecas pescados"
+    "bacalhau carnes"
+    "kids ."
+    "footer footer"
+    ;
+}
+.ceviches{
+    grid-area: ceviches;
+    margin-bottom: 5vh;
+}
+.camaroesalacarte{
+    grid-area: camaroesalacarte;
+    margin-bottom: 5vh;
+}
+.festivais{
+    grid-area: festivais;
+    margin-bottom: 5vh;
+}
+.frutosdomar{
+    grid-area: frutosdomar;
+    margin-bottom: 5vh;
+}
+.moquecas{
+    grid-area: moquecas;
+    margin-bottom: 5vh;
+}
+.pescados{
+    grid-area: pescados;
+    margin-bottom: 5vh;
+}
+.bacalhau{
+    grid-area: bacalhau;
+    margin-bottom: 5vh;
+}
+.carnes{
+    grid-area: carnes;
+    margin-bottom: 5vh;
+}
+.kids{
+    grid-area: kids;
+    margin-bottom: 5vh;
+}
+.footer{
+    grid-area: footer;
+}
+
+
+.bannerceviche{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/q8r7g3zkwioascjnwgb2.jpg");   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+}
+.bannerceviche > h2{
+    color: white;
+}
+
+.bannercamar{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/dfff6.jpg");  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+}
+.bannercamar > h2{
+    color: white;
+}
+
+.bannerfest{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/fest.jpg");   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+}
+.bannerfest > h2{
+    color: white;
+}
+
+.bannerifz{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/ifz.jpg");    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+}
+.bannerifz > h2{
+    color: white;
+}
+
+.bannerw97{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/w97.jpg");    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+}
+.bannerw97 > h2{
+    color: white;
+}
+
+.bannervee{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/vee.jpg");    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+}
+.bannervee > h2{
+    color: white;
+}
+
+.bannerkyf{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/kyf.jpg");    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+}
+.bannerkyf > h2{
+    color: white;
+}
+
+.bannergxv{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/gxv.jpg");    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+}
+.bannergxv > h2{
+    color: white;
+}
+
+.bannernnv{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/nnv.jpg");    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+}
+.bannernnv > h2{
+    color: white;
+}
+
+
+
+
+/*  -----------MEDIA QUERIES    --------   */
+@media only screen and (max-width: 768px){
+
+
+.bodyalacarte{
+    grid-auto-columns: 100%;
+    grid-template-areas: 
+    "ceviches"
+    "camaroesalacarte"
+    "festivais"
+    "frutosdomar"
+    "moquecas" 
+    "pescados"
+    "bacalhau" 
+    "carnes"
+    "kids"
+    "footer"
+    ;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+}
+
+
+html, body {
+    height: 100%;
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+    font-family: "Roboto", sans-serif;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+body.no-scroll {
+    overflow: hidden; /* Impede rolagem quando a sidebar está ativa */
+}
+
+
+/*  ---------  VINHOS  ======== */
+.bodyvinhos{
+    display: grid;
+    grid-auto-columns: 50%;
+    grid-template-areas: 
+    "espumantes brancos"
+    "roses      tintos"
+    "meias       ."
+    "footer     footer"
+    ;
+}
+.espumantes{
+    grid-area: espumantes;
+    margin-bottom: 5vh;
+}
+.brancos{
+    grid-area: brancos;
+    margin-bottom: 5vh;
+}
+.roses{
+    grid-area: roses;
+    margin-bottom: 5vh;
+}
+.tintos{
+    grid-area: tintos;
+    margin-bottom: 5vh;
+}
+.meias{
+    grid-area: meias;
+    margin-bottom: 5vh;
+}
+.footer{
+    grid-area: footer;
+}
+
+
+.bannerespumante{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/q8r7g3zkwioascjnwgb2.jpg");   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+}
+.bannerespumante > h2{
+    color: white;
+}
+
+.bannerbrancos{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/dfff6.jpg");  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+}
+.bannerbrancos > h2{
+    color: white;
+}
+
+.bannerroses{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/fest.jpg");   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+}
+.bannerroses > h2{
+    color: white;
+}
+
+.bannertintos{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/ifz.jpg");    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+}
+.bannertintos > h2{
+    color: white;
+}
+
+.bannermeias{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/w97.jpg");    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+}
+.bannermeias > h2{
+    color: white;
+}
+
+
+
+
+/*  -----------MEDIA QUERIES    --------   */
+@media only screen and (max-width: 768px){
+
+
+.bodyvinhos{
+    grid-auto-columns: 100%;
+    grid-template-areas: 
+    "bannervinhos"
+    "espumantes"
+    "brancos"
+    "roses"
+    "tintos"
+    "meia"
+    ;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

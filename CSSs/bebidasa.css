@@ -1,0 +1,214 @@
+*{
+    box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+}
+
+
+html, body {
+    height: 100%;
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+    font-family: "Roboto", sans-serif;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+body.no-scroll {
+    overflow: hidden; /* Impede rolagem quando a sidebar está ativa */
+}
+
+
+/* ===============  BEBIDASA   ======  */
+
+.bodybebidasa{
+    display: grid;
+    grid-auto-columns: 50%;
+    grid-template-areas: 
+    "cervejas   licores"
+    "destilados cachaças"
+    "rums       vodkas"
+    "conhaques  whisky"
+    "footer     footer"
+    ;
+}
+.cervejas{
+    grid-area: cervejas;
+    margin-bottom: 5vh;
+}
+.licores{
+    grid-area: licores;
+    margin-bottom: 5vh;
+}
+.destilados{
+    grid-area: destilados;
+    margin-bottom: 5vh;
+}
+.cachaças{
+    grid-area: cachaças;
+    margin-bottom: 5vh;
+}
+.rums{
+    grid-area: rums;
+    margin-bottom: 5vh;
+}
+.vodkas{
+    grid-area: vodkas;
+    margin-bottom: 5vh;
+}
+.conhaques{
+    grid-area: conhaques;
+    margin-bottom: 5vh;
+}
+.whisky{
+    grid-area: whisky;
+    margin-bottom: 5vh;
+}
+.footer{
+    grid-area: footer;
+}
+
+.bannerdwo{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/dwo.jpg");    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+}
+.bannerdwo > h2{
+    color: white;
+}
+
+.bannerjjm{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/jjm.jpg");    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+}
+.bannerjjm > h2{
+    color: white;
+}
+
+.bannerisqa{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/isqa.jpg");   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+}
+.bannerisqa > h2{
+    color: white;
+}
+
+.bannervfk{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/vfk.jpg");    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+}
+.bannervfk > h2{
+    color: white;
+}
+
+.bannermhd{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/mhd.jpg");    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+}
+.bannermhd > h2{
+    color: white;
+}
+
+.bannerpht{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/pht.jpg");    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+}
+.bannerpht > h2{
+    color: white;
+}
+
+.bannerwhis{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/whis.jpg");   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+}
+.bannerwhis > h2{
+    color: white;
+}
+
+
+
+/*  -----------MEDIA QUERIES    --------   */
+@media only screen and (max-width: 768px){
+
+
+
+.bodybebidasa{
+    grid-auto-columns: 100%;
+    grid-template-areas: 
+    "cervejas"   
+    "licores"
+    "destilados" 
+    "cachaças"
+    "rums"       
+    "vodkas"
+    "conhaques"  
+    "whisky"
+    "footer"
+    ;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+}
+
+
+html, body {
+    height: 100%;
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+    font-family: "Roboto", sans-serif;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+body.no-scroll {
+    overflow: hidden; /* Impede rolagem quando a sidebar está ativa */
+}
+
+
+
+
+
+
+
+.cdf{
+	display: grid;
+	grid-template-areas: 
+	"imagem title preço"
+	"imagem descr descr"
+	;
+	grid-template-columns: 20% 1fr;
+	align-items: start;
+	padding: 3% 3% 3% 5px;
+	grid-column-gap: 3%;
+}
+.cdf > img{
+	grid-area: imagem;
+	width: 100%;
+	height: auto;
+}
+.cdf > h3{
+	grid-area: title;
+	font-size: 1.1rem;
+	font-weight: normal;
+	opacity: 75%;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.preço{
+	grid-area: preço;
+	color: red;
+	font-size: 1rem;
+	justify-self: end;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.subit{
+	font-size: 0.9rem;
+	opacity: 80%;
+	color: black;
+}
+.rs{
+	font-size: 0.6rem;
+	color: black;
+	opacity: 70%;
+}
+.descr{
+	grid-area: descr;
+	font-size: 0.8rem;
+	opacity: 80%;
+	align-self: end;
+	margin-top: 0;
+}
+
+
+
+/*  -----------MEDIA QUERIES    --------   */
+@media only screen and (max-width: 768px){
+
+
+.cdf{
+	margin: 2vh 0 2vh 0;
+}
+.descr{
+	font-size: 0.9rem;
+}
+
+
+}
+
+

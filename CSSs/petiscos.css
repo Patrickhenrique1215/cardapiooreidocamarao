@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+}
+
+
+html, body {
+    height: 100%;
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+    font-family: "Roboto", sans-serif;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+body.no-scroll {
+    overflow: hidden; /* Impede rolagem quando a sidebar está ativa */
+}
+
+
+/*   ==--------     PETISCOS    =--------- */
+
+.bodypetiscos{
+    display: grid;
+    grid-auto-columns: 50%;
+    grid-template-areas: 
+    "camaroes diversos"
+    "footer footer"
+    ;
+}
+.camaroes{
+    grid-area: camaroes;
+}
+.diversos{
+    grid-area: diversos;
+}
+.footer{
+    grid-area: footer;
+}
+
+.bannercamaroes{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/bannercama.jpg");     
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+}
+.bannercamaroes > h2{
+    color: white;
+}
+
+
+.bannerdiversos{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/ymy7uhpztlyk8syl8dpj.jpg");   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+}
+.bannerdiversos > h2{
+    color: white;
+}
+
+
+
+
+/*  -----------MEDIA QUERIES    --------   */
+@media only screen and (max-width: 768px){
+
+
+
+.bodypetiscos{
+    grid-auto-columns: 100%;
+    grid-template-areas: 
+    "camaroes"
+    "diversos"
+    "footer"
+    ;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

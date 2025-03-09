@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+}
+
+
+html, body {
+    height: 100%;
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+    font-family: "Roboto", sans-serif;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+body.no-scroll {
+    overflow: hidden; /* Impede rolagem quando a sidebar está ativa */
+}
+
+
+
+
+
+
+
+/*   ============= FOOTER   -------------- */
+footer{
+	margin-top: 80px;
+	text-align: center;
+	opacity: 75%;
+}
+.fp1{
+	font-size: 0.9rem;
+}
+.fp2{
+	font-size: 1.5rem;
+}
+.fp4{
+	font-size: 0.9rem;
+}
+
+

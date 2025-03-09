@@ -1,0 +1,287 @@
+*{
+    box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+}
+
+
+html, body {
+    height: 100%;
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+    font-family: "Roboto", sans-serif;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+body.no-scroll {
+    overflow: hidden; /* Impede rolagem quando a sidebar está ativa */
+}
+
+
+
+.body{
+	margin-top: 20px;
+	margin-left: 10%;
+	margin-right: 10%;
+	overflow-x: hidden;
+	display: grid;
+  	grid-template-areas: 
+  	"topo"
+  	"petiscos"
+  	"alacarte"
+  	"drinks"
+  	"bebidasna"
+  	"bebidasa"
+  	"sobremesas"
+  	"vinhos"
+	;
+
+}
+
+.topo{
+	grid-area: topo;
+	background-color: black;
+	height: 100px;
+	margin-top: 50px;	
+}
+.topo > h1{
+	text-align: center;
+	font-size: 1.8rem;
+	color: white;
+	font-weight: 100;
+	padding-top: 15px;
+	margin-bottom: -10px;
+
+}
+.topo > p{
+	text-align: center;
+	font-size: 1rem;
+	color: white;
+	font-weight: 100;
+	margin-bottom: -10px;
+}
+
+
+
+
+
+
+
+
+
+.petiscos{
+	grid-area: petiscos;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/backpetiscos.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 320px;
+	display: flex;
+	align-items: flex-end;
+	cursor: pointer;	
+}
+.petiscos > div > h2{
+	color: white;
+	font-weight: 100;
+}
+.petiscos > div > p{
+	color: white;
+	font-size: 0.9rem;
+	font-weight: 100;
+}
+
+
+
+
+
+
+
+
+.alacarte{
+	grid-area: alacarte;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/backalacarte.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 320px;
+	display: flex;
+	align-items: flex-end;
+	cursor: pointer;	
+}
+.alacarte > div > h2{
+	color: white;
+	font-weight: 100;
+}
+.alacarte > div > p{
+	color: white;
+	font-size: 0.9rem;
+	font-weight: 100;
+}
+
+
+
+
+
+
+
+.drinks{
+	grid-area: drinks;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/backdrinks.jpg"); 	
+   	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 320px;
+	display: flex;
+	align-items: flex-end; 
+	cursor: pointer;
+}
+.drinks > div > h2{
+	color: white;
+	font-weight: 100;
+}
+.drinks > div > p{
+	color: white;
+	font-size: 0.9rem;
+	font-weight: 100;
+}
+
+
+
+
+
+
+
+
+.bebidasna{
+  	grid-area: bebidasna;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/backbebidasna.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 320px;
+	display: flex;
+	align-items: flex-end;
+	cursor: pointer;  	
+}
+.bebidasna > div > h2{
+	color: white;
+	font-weight: 100;
+}
+.bebidasna > div > p{
+	color: white;
+	font-size: 0.9rem;
+	font-weight: 100;
+}
+
+
+
+
+
+
+
+
+.bebidasa{
+  	grid-area: bebidasa;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/backbebidasa.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 320px;
+	display: flex;
+	align-items: flex-end;
+	cursor: pointer;  	
+}
+.bebidasa > div > h2{
+	color: white;
+	font-weight: 100;
+}
+.bebidasa > div > p{
+	color: white;
+	font-size: 0.9rem;
+	font-weight: 100;
+}
+
+
+
+
+
+
+.sobremesas{
+  	grid-area: sobremesas;
+  	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/backsobremesas.jpg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 320px;
+	display: flex;
+	align-items: flex-end;
+	cursor: pointer;
+}
+.sobremesas > div > h2{
+	color: white;
+	font-weight: 100;
+}
+.sobremesas > div > p{
+	color: white;
+	font-size: 0.9rem;
+	font-weight: 100;
+}
+
+
+
+
+
+
+
+.vinhos{
+  	grid-area: vinhos;
+  	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../images/bannervinhos.jpeg"); 	
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 320px;
+	display: flex;
+	align-items: flex-end;
+	cursor: pointer;
+}
+.vinhos > div > h2{
+	color: white;
+	font-weight: 100;
+}
+.vinhos > div > p{
+	color: white;
+	font-size: 0.9rem;
+	font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  -----------MEDIA QUERIES    --------   */
+@media only screen and (max-width: 768px){
+
+
+.body{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+}
+
+
+
